@@ -1,0 +1,34 @@
+{
+  "name": "ai-ready-sites",
+  "version": "0.2.0",
+  "description": "Self-contained website design, implementation, quality review and browser verification, adaptable to the user's stage and tools.",
+  "author": {
+    "name": "AI-Ready"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "websites",
+    "frontend",
+    "design",
+    "accessibility",
+    "browser-qa"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI-Ready Sites",
+    "shortDescription": "Design, build, verify websites",
+    "longDescription": "One independent skill for website and interface work, with included design, implementation, quality and browser guidance. No other skills or accounts required; live browser checks need an available browser tool.",
+    "developerName": "AI-Ready",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use AI-Ready Sites to build this website from brief through release gate.",
+      "Audit and redesign this existing interface without replacing its architecture.",
+      "Run design review, browser QA, and the release gate on this frontend."
+    ]
+  }
+}

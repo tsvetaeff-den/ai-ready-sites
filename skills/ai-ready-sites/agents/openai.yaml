@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI-Ready Sites"
+  short_description: "Independent website design, build and browser QA"
+  default_prompt: "Use $ai-ready-sites to build or improve this website and verify the affected user experience."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "packageVersion": "0.2.0",
+  "adaptationDate": "2026-11-08",
+  "notes": "Rewritten and condensed instructional material; no upstream binaries or runtime dependencies bundled.",
+  "upstreams": [
+    {
+      "name": "impeccable",
+      "repository": "https://github.com/pbakaus/impeccable",
+      "ref": "skill-v4.8.0",
+      "commit": "414603bf14c7a344edb466bb1f85690c77ce8b7d",
+      "license": "Apache-2.0",
+      "licensePath": "vendor/impeccable/LICENSE",
+      "licenseSha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
+      "notices": [
+        "vendor/impeccable/NOTICE.md"
+      ],
+      "adaptedInto": [
+        "references/brief-ux.md",
+        "references/design.md"
+      ],
+      "sourceFiles": {
+        ".agents/skills/impeccable/SKILL.md": "fab04b31f946573b00a8559db1fc070f8ea5825254d491c2b13156e5661a86d7",
+        ".agents/skills/impeccable/reference/craft-floor.md": "808a50e0e6c74617a07b0eaf7fd80f58d8e48a13f48e47c658c7534b1724e5c2",
+        ".agents/skills/impeccable/reference/operate.md": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d"
+      }
+    },
+    {
+      "name": "web-quality-skills",
+      "repository": "https://github.com/addyosmani/web-quality-skills",
+      "ref": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "license": "MIT",
+      "licensePath": "vendor/web-quality-skills/LICENSE",
+      "licenseSha256": "c122223ac43e86421958e18623979942c21b642951e2e3736dcb63eff13587c3",
+      "notices": [],
+      "adaptedInto": [
+        "references/quality.md",
+        "references/completion.md"
+      ],
+      "sourceFiles": {
+        "skills/web-quality-audit/SKILL.md": "1903cfb4dcba987d50dc7a51f6c19ec43830ff924c2c8f78979d8775fbe20f91",
+        "skills/performance/references/MEASUREMENT.md": "128f6f20c6c8fb55fcccd8b259cf680811022cf262dc55b03e9d623bcb555a99"
+      }
+    },
+    {
+      "name": "web-interface-guidelines",
+      "repository": "https://github.com/vercel-labs/web-interface-guidelines",
+      "ref": "main",
+      "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "license": "MIT",
+      "licensePath": "vendor/web-interface-guidelines/LICENSE",
+      "licenseSha256": "6cd1609c9c12233507cdd2ce0d32e9a721e3c27494951be06b90090deeeb7af2",
+      "notices": [],
+      "adaptedInto": [
+        "references/design.md",
+        "references/implementation.md",
+        "references/quality.md"
+      ],
+      "sourceFiles": {
+        "command.md": "d246b026f4f29b5823a9cc857f9edf3d2507002e055e32040cadeaf3b38e0234"
+      }
+    },
+    {
+      "name": "chrome-devtools-mcp",
+      "repository": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "ref": "chrome-devtools-mcp-v1.12.0",
+      "commit": "af2834411a564d366f9cab63efb046d9084f4dba",
+      "license": "Apache-2.0",
+      "licensePath": "vendor/chrome-devtools-mcp/LICENSE",
+      "licenseSha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notices": [],
+      "adaptedInto": [
+        "references/devtools.md",
+        "references/browser.md"
+      ]
+    },
+    {
+      "name": "playwright-cli",
+      "repository": "https://github.com/microsoft/playwright-cli",
+      "ref": "v0.1.23",
+      "commit": "0a808078d96496cf2a8fa725143c870354f63cda",
+      "license": "Apache-2.0",
+      "licensePath": "vendor/playwright-cli/LICENSE",
+      "licenseSha256": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda",
+      "notices": [],
+      "adaptedInto": [
+        "references/playwright.md",
+        "references/browser.md"
+      ]
+    },
+    {
+      "name": "taste-skill",
+      "repository": "https://github.com/Leonxlnx/taste-skill",
+      "commit": "7c397f22d3af6f2b3f1925eb147d8e8801086151",
+      "license": "MIT",
+      "licensePath": "vendor/taste-skill/LICENSE",
+      "adaptedInto": [
+        "references/brief-ux.md",
+        "references/design.md"
+      ],
+      "licenseSha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+    },
+    {
+      "name": "gsap-skills",
+      "repository": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "licensePath": "vendor/gsap-skills/LICENSE",
+      "adaptedInto": [
+        "references/motion.md"
+      ],
+      "licenseSha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    }
+  ]
+}
