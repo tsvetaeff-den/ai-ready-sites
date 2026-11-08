@@ -1,6 +1,6 @@
 {
   "name": "ai-ready-sites",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Self-contained website design, implementation, quality review and browser verification, adaptable to the user's stage and tools.",
   "author": {
     "name": "AI-Ready"

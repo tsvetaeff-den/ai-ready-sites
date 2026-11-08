@@ -1,8 +1,14 @@
-# Validation — AI-Ready Sites 0.2.0
+# Validation — AI-Ready Sites 0.2.1
 
 Validation date: 2026-11-08. Tested on Windows, Node.js 24.15.0 and Chrome 156.0.8078.81. This records the original Windows baseline. GitHub Actions runs structural and installer checks on Ubuntu, Windows and macOS with Node.js 24. Check the workflow results for the actual revision. GitHub publication does not imply acceptance into a plugin directory.
 
-## Accepted checks
+## Version 0.2.1
+
+The installer copies into a new child directory inside a uniquely created staging parent. This supports strict `cpSync` behavior in current Node.js while retaining no-overwrite checks, exact backups and staging cleanup. Package/skill/provenance versions are checked for consistency.
+
+Structural and installer checks are run on Ubuntu, Windows and macOS with Node.js 24. The release is published only after the exact release commit passes all three jobs. This is an installer/package check, not a full browser or accessibility evaluation on those operating systems.
+
+## Original 0.2.0 acceptance checks
 
 | Check | Observed result |
 | --- | --- |

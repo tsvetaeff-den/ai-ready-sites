@@ -11,7 +11,7 @@ const skills=path.join(testRoot,'skills'), target=path.join(skills,'ai-ready-sit
 function run(extra=[]) {const r=spawnSync(process.execPath,[installer,'--skills-dir',skills,...extra],{encoding:'utf8'});return {code:r.status,stdout:r.stdout,stderr:r.stderr};}
 const results=[];
 try {
-  let r=run();assert.equal(r.code,0,r.stderr);assert.equal(JSON.parse(r.stdout).status,'INSTALLED');results.push('fresh install');
+  let r=run();assert.equal(r.code,0,r.stderr);assert.equal(JSON.parse(r.stdout).status,'INSTALLED');assert.equal(JSON.parse(r.stdout).version,'0.2.1');results.push('fresh install');
   const original=fs.readFileSync(path.join(target,'SKILL.md'));
   r=run();assert.equal(r.code,0,r.stderr);assert.equal(JSON.parse(r.stdout).status,'ALREADY_INSTALLED');results.push('idempotent repeat');
   fs.writeFileSync(path.join(target,'SKILL.md'),'existing user customization');

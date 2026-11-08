@@ -9,7 +9,7 @@ const skill = path.join(root,'skills/ai-ready-sites');
 const manifest = JSON.parse(fs.readFileSync(path.join(root,'plugin.json'),'utf8'));
 const overlay = JSON.parse(fs.readFileSync(path.join(root,'.codex-plugin/plugin.json'),'utf8'));
 assert.equal(manifest.$schema,'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json');
-assert.equal(manifest.name,'ai-ready-sites');assert.equal(manifest.version,'0.2.0');
+assert.equal(manifest.name,'ai-ready-sites');assert.equal(manifest.version,'0.2.1');
 assert.equal(overlay.name,manifest.name);assert.equal(overlay.version,manifest.version);
 assert.deepEqual(overlay.interface,manifest.extensions['com.openai'].interface);
 assert.equal(manifest.extensions['com.openai'].interface.category,'Developer Tools');
@@ -38,6 +38,8 @@ for(const p of files) {
   }
 }
 const lock=JSON.parse(fs.readFileSync(path.join(skill,'upstreams.lock.json'),'utf8'));
+assert.equal(lock.packageVersion,manifest.version);
+assert.ok(entry.includes('version: '+JSON.stringify(manifest.version)), 'Skill version differs from manifest');
 assert.equal(lock.upstreams.length,7);
 for(const u of lock.upstreams) {
   assert.match(u.commit,/^[0-9a-f]{40}$/);

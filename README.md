@@ -1,4 +1,4 @@
-# AI-Ready Sites 0.2.0
+# AI-Ready Sites 0.2.1
 
 [![Validate](https://github.com/tsvetaeff-den/ai-ready-sites/actions/workflows/validate.yml/badge.svg)](https://github.com/tsvetaeff-den/ai-ready-sites/actions/workflows/validate.yml)
 
@@ -8,10 +8,10 @@ All design, implementation, quality and browser guidance is included in `skills/
 
 ## Quick start
 
-Download this repository as a ZIP, or clone it:
+Download the [0.2.1 installation archive](https://github.com/tsvetaeff-den/ai-ready-sites/releases/download/v0.2.1/ai-ready-sites-0.2.1.zip), extract it and open its `ai-ready-sites` directory, or clone the exact release:
 
 ```sh
-git clone https://github.com/tsvetaeff-den/ai-ready-sites.git
+git clone --branch v0.2.1 --depth 1 https://github.com/tsvetaeff-den/ai-ready-sites.git
 cd ai-ready-sites
 node scripts/install.mjs
 ```
@@ -43,6 +43,12 @@ The installer has no downloads or npm dependencies. It copies the same skill fol
 ### Plugin-capable hosts
 
 The root `plugin.json` is a portable Agent Plugins manifest; `.codex-plugin/plugin.json` preserves a Codex compatibility manifest with the same identity. Use your host's supported local plugin import/marketplace mechanism if preferred. This archive contains one plugin and no marketplace. Direct skill-folder installation above is the verified low-dependency distribution route. Do not install both forms into the same profile.
+
+## Verify the downloaded archive
+
+Download `ai-ready-sites-0.2.1.sha256` from the same [release](https://github.com/tsvetaeff-den/ai-ready-sites/releases/tag/v0.2.1). On Linux use `sha256sum -c ai-ready-sites-0.2.1.sha256`; on macOS use `shasum -a 256 -c ai-ready-sites-0.2.1.sha256`. On Windows run `Get-FileHash .\ai-ready-sites-0.2.1.zip -Algorithm SHA256` in PowerShell and compare with the checksum file. Keep both files in the same directory.
+
+The release ZIP contains one `ai-ready-sites/` directory with the skill, installer, documentation and licenses. Manual copying needs no Node runtime; the optional installer requires Node.js 18+.
 
 ## Examples
 

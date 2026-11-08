@@ -3,7 +3,7 @@ name: ai-ready-sites
 description: "Design, build, improve, or audit websites and web interfaces with scoped UX, visual direction, implementation, and browser verification. Use for landing pages, product UI, responsive components, redesigns, and website readiness checks. Handles small fixes and audit-only requests without imposing a full development process. Not for backend-only tasks or native apps."
 license: Apache-2.0
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # AI-Ready Sites

@@ -1,9 +1,11 @@
 # Changelog
 
-## Unreleased
+## 0.2.1 — 2026-11-08
 
 - Added GitHub Actions package and installer checks on Ubuntu, Windows and macOS.
 - Fixed installer staging for newer Node.js versions while preserving strict copy checks and backup behavior.
+
+- Published an installation ZIP and SHA-256 checksum, with synchronized package/skill versions and release documentation.
 
 ## 0.2.0
 
