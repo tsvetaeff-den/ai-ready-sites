@@ -1,9 +1,9 @@
 ---
 name: ai-ready-sites
-description: "Design, build, improve, or audit websites and web interfaces with scoped UX, visual direction, implementation, and browser verification. Use for landing pages, product UI, responsive components, redesigns, and website readiness checks. Handles small fixes and audit-only requests without imposing a full development process. Not for backend-only tasks or native apps."
+description: "Design, build, improve, or audit websites and web interfaces; write or edit site copy, product instructions and technical documentation, including RU/EN translation. Use for landing pages, product UI, responsive components, redesigns and readiness checks. Scope text-only work, small fixes and audits to the request. Not for backend-only implementation or native apps."
 license: Apache-2.0
 metadata:
-  version: "0.2.1"
+  version: "0.3.0"
 ---
 
 # AI-Ready Sites
@@ -21,6 +21,9 @@ Inspect the request, applicable project instructions, stack, existing components
 | Small component or UI fix | Inspect affected surface; use only relevant design/implementation guidance, focused browser check and required project checks |
 | Audit/review only | Relevant design/quality/browser guidance; gather evidence and report prioritized findings; do not edit the audited project |
 | Motion | [Motion](references/motion.md), affected UI and reduced-motion verification |
+| Site or interface text | [Site and interface copy](references/site-copy.md) and [editorial review](references/editorial.md); write or edit within the requested scope |
+| Instructions or technical documentation | [Technical writing](references/technical-writing.md) and editorial review; verify the relevant procedure without requiring a website build |
+| RU/EN editing or translation | Editorial review, plus the relevant copy/documentation guide; preserve facts, executable text and actual UI labels |
 | Ready to ship? | [Completion](references/completion.md), current browser evidence and required project checks; no deployment implied |
 
 Load references when needed, not all at once. This is a selection of capabilities, not a compulsory sequence. Reuse valid evidence; do not repeat equivalent reviews under different names.
@@ -29,6 +32,7 @@ Load references when needed, not all at once. This is a selection of capabilitie
 
 - For new work, turn product facts into a coherent direction and finish one working user journey before extending it. For refinement, preserve existing identity and behavior outside scope. For redesign, preserve product truth and required functions while changing the requested visual system.
 - Build with real content and working controls. Label demo data, local simulations, and unavailable integrations. Do not invent customer quotes, performance claims, prices, or a working backend.
+- When writing or editing copy, use the relevant text guide. Preserve facts, conditions, commands and current UI labels. Improve clarity and usefulness; do not optimize for authorship-detector scores. Text-only work does not trigger design or browser stages unless the requested claim needs them.
 - Make text, forms, navigation and states usable on the intended screens, with keyboard and assistive semantics. Design ambition fits the surface: expressive marketing, precise task UI, readable editorial, or an experience led by the work itself.
 - Confirm behavior by observing the outcome in a real browser. Inspect screenshots for visual claims; source, a successful click, and a successful build do not prove the rendered result.
 - If tools, authentication, assets, or runtime prerequisites are unavailable, finish independent work and state the specific missing check. Do not fabricate a PASS, install unrelated tools, or silently replace the user's stack.

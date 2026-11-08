@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 — 2026-11-08
+
+- Added self-contained guides for website/interface copy, task-oriented technical documentation and RU/EN editorial review and translation.
+- Protected facts, qualifications, commands, URLs, quotations and actual UI labels during editing.
+- Added English README revision, Russian README and bilingual editorial evaluation artifacts.
+- Added pinned editorial-source attribution and retained original MIT licenses; no external skills or scanners are required.
+- Promoted the tested local preview to stable 0.3.0, with bilingual installation documentation, release notes, an installation ZIP and SHA-256 checksum.
+
 ## 0.2.1 — 2026-11-08
 
 - Added GitHub Actions package and installer checks on Ubuntu, Windows and macOS.

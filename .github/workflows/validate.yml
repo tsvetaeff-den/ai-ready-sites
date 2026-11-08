@@ -26,3 +26,5 @@ jobs:
         run: node scripts/validate.mjs
       - name: Test installer and backup behavior
         run: node scripts/test-install.mjs
+      - name: Check saved bilingual editorial artifacts
+        run: node scripts/check-text-artifacts.mjs

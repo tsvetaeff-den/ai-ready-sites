@@ -63,4 +63,4 @@ try {
 } finally {
   if (within(targetRoot,stagingParent) && fs.existsSync(stagingParent)) fs.rmSync(stagingParent,{recursive:true});
 }
-console.log(JSON.stringify({status:'INSTALLED',target,backup,files:Object.keys(expected).length,version:'0.2.1'}));
+console.log(JSON.stringify({status:'INSTALLED',target,backup,files:Object.keys(expected).length,version:'0.3.0'}));

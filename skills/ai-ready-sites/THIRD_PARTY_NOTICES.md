@@ -12,6 +12,18 @@ AI-Ready Sites 0.2.0 includes modified and condensed instructional material. The
 | [Taste Skill](https://github.com/Leonxlnx/taste-skill) | Copyright (c) 2026 Leonxlnx | [MIT](vendor/taste-skill/LICENSE) | Brief-led visual direction and preservation of existing systems, carried forward from AI-Ready Sites 0.1.0 |
 | [GSAP AI Skills](https://github.com/greensock/gsap-skills) | Copyright (c) 2026 GreenSock | [MIT](vendor/gsap-skills/LICENSE) | Scoped animation, timelines, responsive lifecycle and reduced motion, carried forward from 0.1.0 |
 
+## Editorial additions in 0.3.0
+
+The following MIT-licensed guidance was selectively condensed and rewritten on 2026-11-08. The package includes its own instructions; it does not invoke these skills or bundle their scanners. Automatic all-conversation triggers, rigid punctuation/word bans, mandatory scanner scores and promises about AI detection were not adopted. Protected facts, code, UI labels and task scope take precedence.
+
+| Source | Attribution | License | Adapted guidance |
+| --- | --- | --- | --- |
+| [Humanizer](https://github.com/blader/humanizer) | Copyright (c) 2025 Siqi Chen | [MIT](vendor/humanizer/LICENSE) | Meaning-preserving editing, specific prose and contextual voice |
+| [Humanizer-RU](https://github.com/ilyautov/humanizer-ru) | Copyright (c) 2026 Ilya Utov | [MIT](vendor/humanizer-ru/LICENSE) | Scoped Russian editing, audit/edit distinction and factual fidelity |
+| [ru-text](https://github.com/talkstream/ru-text) | Copyright (c) 2026 Arseniy Kamyshev | [MIT](vendor/ru-text/LICENSE) | Russian editorial conventions, quotation/code preservation and UX copy considerations |
+
+The technical-writing guide is original synthesis informed by the public [Diátaxis](https://diataxis.fr/) distinction among learning, task completion, lookup and understanding. No Diátaxis source text, other writing skill, private product documentation or runtime is bundled. All three included writing guides work without fetching external references.
+
 The Impeccable upstream notice is retained in [NOTICE.md](vendor/impeccable/NOTICE.md). It includes attribution for native platform material; AI-Ready Sites does not include the iOS/Android reference files.
 
 Original AI-Ready code, synthesis and packaging are licensed under [Apache-2.0](LICENSE). Upstream license and notice texts remain applicable to their material. Repository licenses do not grant trademark endorsement. This is not an official Impeccable, Vercel, Google, Microsoft, OpenAI or GreenSock product.

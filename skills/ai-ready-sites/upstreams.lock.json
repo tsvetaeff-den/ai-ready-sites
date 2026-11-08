@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "packageVersion": "0.2.1",
+  "packageVersion": "0.3.0",
   "adaptationDate": "2026-11-08",
   "notes": "Rewritten and condensed instructional material; no upstream binaries or runtime dependencies bundled.",
   "upstreams": [
@@ -111,6 +111,52 @@
         "references/motion.md"
       ],
       "licenseSha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "name": "humanizer",
+      "repository": "https://github.com/blader/humanizer",
+      "commit": "0ef9fe5bc3572734fd3ae6c448fe00a30cd5dcf0",
+      "license": "MIT",
+      "licensePath": "vendor/humanizer/LICENSE",
+      "licenseSha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+      "notices": [],
+      "adaptedInto": [
+        "references/editorial.md"
+      ],
+      "sourceFiles": {
+        "SKILL.md": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad"
+      }
+    },
+    {
+      "name": "humanizer-ru",
+      "repository": "https://github.com/ilyautov/humanizer-ru",
+      "commit": "b6df5d9b87d47ca288cce3a02da007da33221626",
+      "license": "MIT",
+      "licensePath": "vendor/humanizer-ru/LICENSE",
+      "licenseSha256": "df96cb93e068e585693075a44606d98ddb3df5e92c42eb3fdf4881945a2a9f75",
+      "notices": [],
+      "adaptedInto": [
+        "references/editorial.md"
+      ],
+      "sourceFiles": {
+        "skills/humanizer-ru/SKILL.md": "4609acd000e633f5c2534c5c8b769b2bcb52d1324db7ad0c10b910edbca8b71f"
+      }
+    },
+    {
+      "name": "ru-text",
+      "repository": "https://github.com/talkstream/ru-text",
+      "commit": "e398aec9e6f02d1bf28ae5a79a118e2404d52e90",
+      "license": "MIT",
+      "licensePath": "vendor/ru-text/LICENSE",
+      "licenseSha256": "37ea601e35a544e6a4b08b1c5cb126543b2ea6dc14b23620f12bdc11a00ba839",
+      "notices": [],
+      "adaptedInto": [
+        "references/editorial.md",
+        "references/site-copy.md"
+      ],
+      "sourceFiles": {
+        "skills/ru-text/SKILL.md": "aa9d5764536ac353522446f2e4cc424b5bc78c5558b61195fbf2efc4801ab7d2"
+      }
     }
   ]
 }

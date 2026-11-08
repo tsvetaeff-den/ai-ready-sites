@@ -1,4 +1,18 @@
-# Validation — AI-Ready Sites 0.2.1
+# Validation — AI-Ready Sites 0.3.0
+
+## Version 0.3.0: writing and RU/EN documentation
+
+Version 0.3.0 promotes the reviewed 0.3.0-dev.1 instructions to a stable release. Local validation on 2026-11-08 covers the package, installation and new text guidance. Publication is gated on successful Ubuntu, Windows and macOS jobs for the exact release commit. The release page links the matching workflow run.
+
+- The standard skill metadata validator passed. Package integrity checks validate one skill, contained references, synchronized release versions and ten pinned sources with preserved licenses.
+- All six isolated installer checks passed: fresh install, repeat, overwrite refusal, exact backup, no configuration/instruction mutation and staging cleanup.
+- Two independent task agents used only this skill and its relevant internal references to edit/translate the README and complete eight RU/EN cases. A third agent reviewed the README sources and translations. Two semantic discrepancies were found and corrected; see [the editorial evaluation](tests/editorial/REVIEW.md).
+- Saved-output checks compare protected literals and numeric values in eight cases, verify narrow/audit boundaries and run six deliberate corruption controls. EN/RU README executable blocks, command/path spans and external URLs are compared. These are artifact checks, not live model evaluations or semantic proofs.
+- Original website/browser behavior was not re-evaluated because the changes concern writing guidance, documentation and packaging. Historical evidence below is explicitly tied to the earlier versions. No browser, macOS/Linux or Node.js 18 execution is claimed for the editorial changes.
+
+Reproduce local checks with `node scripts/validate.mjs`, `node scripts/test-install.mjs` and `node scripts/check-text-artifacts.mjs`. All three checks are included in the GitHub Actions workflow. The editorial evaluation remains a historical record of the local preview; its original limitations are retained.
+
+## Historical validation baseline
 
 Validation date: 2026-11-08. Tested on Windows, Node.js 24.15.0 and Chrome 156.0.8078.81. This records the original Windows baseline. GitHub Actions runs structural and installer checks on Ubuntu, Windows and macOS with Node.js 24. Check the workflow results for the actual revision. GitHub publication does not imply acceptance into a plugin directory.
 
@@ -35,7 +49,7 @@ Ordinary coding/browser tools were available. The skill did not need Impeccable,
 
 An early run received external design-hook guidance and was excluded. A fresh independent build received none. An evaluator read extra internal references of this same package, so minimal reference loading was not established.
 
-## Limits
+## Limits of the original 0.2.0 evaluation
 
 macOS/Linux execution, a second physical machine, public-directory ingestion, every model's implicit skill choice, real screen-reader use and physical-device behavior were not tested. True browser text zoom was not tested; the extra screenshot used font overrides. Full performance, SEO and WCAG conformance were not claimed for the synthetic demo. Missing browser/runtime checks remain NOT RUN; the helper's limited smoke PASS is not a general site-quality certificate.
 

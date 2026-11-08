@@ -37,3 +37,7 @@ Evaluate: useful task-oriented structure, meaningful states, preservation of cur
 `node scripts/test-install.mjs` checks fresh install, identical repeat, refusal to silently overwrite, exact backup during replacement and no config/instruction changes.
 
 `node scripts/test-browser.mjs --module EXISTING_PLAYWRIGHT_MODULE --channel chrome` uses an existing Playwright library and Chrome against its own loopback fixture. It checks observed action result on two viewports, failure detection for overflow/runtime errors, and NOT RUN for an absent library. No packages are installed. Screenshots still need a human/agent visual review for appearance claims.
+
+## Text and documentation
+
+Run the offline requests in [editorial/cases.json](editorial/cases.json) using only this package and compare actual outputs under [editorial/README.md](editorial/README.md). Also edit a real README and translate it into Russian. Review factual conditions and usable instructions separately from literal checks. The stored [review](editorial/REVIEW.md) records this candidate's observed results; it is not a future-model guarantee.

@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-ready-sites",
-  "version": "0.2.1",
-  "description": "Self-contained website design, implementation, quality review and browser verification, adaptable to the user's stage and tools.",
+  "version": "0.3.0",
+  "description": "Self-contained website design, implementation, copy, technical documentation, RU/EN editing and browser verification, scoped to the request.",
   "author": {
     "name": "AI-Ready"
   },
@@ -12,14 +12,16 @@
     "frontend",
     "design",
     "accessibility",
-    "browser-qa"
+    "browser-qa",
+    "documentation",
+    "ux-writing"
   ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "AI-Ready Sites",
         "shortDescription": "Design, build, verify websites",
-        "longDescription": "One independent skill for website and interface work, with included design, implementation, quality and browser guidance. No other skills or accounts required; live browser checks need an available browser tool.",
+        "longDescription": "One independent skill for website and interface work, including design, implementation, site copy, technical documentation, RU/EN editing, quality and browser guidance. No other skills or accounts required; live browser checks need an available browser tool.",
         "developerName": "AI-Ready",
         "category": "Developer Tools",
         "capabilities": [
