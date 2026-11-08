@@ -42,7 +42,8 @@ if (fs.existsSync(target)) {
   if (!replace) { console.error('Destination differs. Nothing changed. Use --replace to preserve a backup and install.'); process.exit(1); }
 }
 fs.mkdirSync(targetRoot, {recursive:true});
-const staging = fs.mkdtempSync(path.join(targetRoot, '.ai-ready-sites-staging-'));
+const stagingParent = fs.mkdtempSync(path.join(targetRoot, '.ai-ready-sites-staging-'));
+const staging = path.join(stagingParent, 'package');
 let backup = null;
 try {
   fs.cpSync(source, staging, {recursive:true, errorOnExist:true, force:false});
@@ -58,7 +59,8 @@ try {
   fs.renameSync(staging,target);
 } catch (error) {
   if (backup && !fs.existsSync(target)) fs.renameSync(backup,target);
-  if (within(targetRoot,staging) && fs.existsSync(staging)) fs.rmSync(staging,{recursive:true});
   throw error;
+} finally {
+  if (within(targetRoot,stagingParent) && fs.existsSync(stagingParent)) fs.rmSync(stagingParent,{recursive:true});
 }
 console.log(JSON.stringify({status:'INSTALLED',target,backup,files:Object.keys(expected).length,version:'0.2.0'}));

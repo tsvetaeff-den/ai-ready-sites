@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Added GitHub Actions package and installer checks on Ubuntu, Windows and macOS.
+- Fixed installer staging for newer Node.js versions while preserving strict copy checks and backup behavior.
+
 ## 0.2.0
 
 - Consolidated seven specialist skills into `$ai-ready-sites`, with nine internal guides.

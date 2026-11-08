@@ -20,6 +20,7 @@ try {
   assert.equal(fs.readFileSync(path.join(backup,'SKILL.md'),'utf8'),'existing user customization');
   assert.deepEqual(fs.readFileSync(path.join(target,'SKILL.md')),original);results.push('replace preserves exact backup');
   assert.ok(!fs.existsSync(path.join(testRoot,'config.toml')));assert.ok(!fs.existsSync(path.join(testRoot,'AGENTS.md')));results.push('no config/instruction mutation');
+  assert.ok(!fs.readdirSync(skills).some(name=>name.startsWith('.ai-ready-sites-staging-')));results.push('temporary staging cleaned');
   console.log(JSON.stringify({status:'PASS',checks:results}));
 } finally {
   const actual=fs.realpathSync(testRoot), base=fs.realpathSync(os.tmpdir());
