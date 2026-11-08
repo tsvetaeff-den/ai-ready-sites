@@ -1,5 +1,7 @@
 # AI-Ready Sites 0.2.0
 
+[![Validate](https://github.com/tsvetaeff-den/ai-ready-sites/actions/workflows/validate.yml/badge.svg)](https://github.com/tsvetaeff-den/ai-ready-sites/actions/workflows/validate.yml)
+
 An independent skill for designing, building, improving and checking websites and web interfaces. Start at the stage you need: a new landing page, an established product UI, a small repair, a design audit, or release readiness.
 
 All design, implementation, quality and browser guidance is included in `skills/ai-ready-sites`. No other skills, global AGENTS.md, Impeccable engine, hosting account, paid API or framework is required. The host supplies the model and coding tools. Actual browser verification needs an available host browser tool, or an installed automation runtime and browser. The skill honestly reports unavailable checks.

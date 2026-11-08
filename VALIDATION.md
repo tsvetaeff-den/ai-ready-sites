@@ -1,6 +1,6 @@
 # Validation — AI-Ready Sites 0.2.0
 
-Validation date: 2026-11-08. Tested on Windows, Node.js 24.15.0 and Chrome 156.0.8078.81. This records the original Windows baseline. Repository checks are run locally; GitHub Actions is not configured. GitHub publication does not imply acceptance into a plugin directory.
+Validation date: 2026-11-08. Tested on Windows, Node.js 24.15.0 and Chrome 156.0.8078.81. This records the original Windows baseline. GitHub Actions runs structural and installer checks on Ubuntu, Windows and macOS with Node.js 24. Check the workflow results for the actual revision. GitHub publication does not imply acceptance into a plugin directory.
 
 ## Accepted checks
 
